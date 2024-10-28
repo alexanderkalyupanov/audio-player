@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Audio Player</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script src="./scripts/main.js" defer></script>
+</head>
+<body>    
+   
+    <div class="audio">
+        <div class="audio__container">
+            <div class="audio__cover">
+                <img alt="audio cover" class="audio__img">
+            </div>
+            <div class="audio__artist"></div>
+            <div class="audio__name"></div>
+            <audio src="./assets/audio/beyonce.mp3" class="track"></audio>
+            <div class="progress__container">
+                <input type="range" value="0" min="1" max="100" class="progress__bar">
+                <div class="currentTime">00:00</div>
+                <div class="duration">00:00</div>
+            </div>
+            <div class="volume__container">
+                <i class="fa fa-volume-down volume"></i>
+                <input type="range" min="1" max="100" value="99" class="volume__bar">
+                <i class="fa fa-volume-up volume"></i>
+            </div>
+            <div class="audio__controls">
+                <button class="btn backward"> <img src="./assets/icons/backward.svg" alt=""></button>
+                <button class="btn play-pause"> <img class="btn__src" src="./assets/icons/play.svg" alt=""></button>
+                <button class="btn forward"> <img src="./assets/icons/forward.svg" alt=""></button>
+            </div>
+           
+    </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__box">
+                <div class="footer__item">
+                    <a href="https://github.com/alexanderkalyupanov" target="_blank" class="footer__link">                    
+                        <img src="./assets/icons/git.svg" alt="github logo" class="contacts__img" style="width: 50px; height: 50px;">
+                    </a>
+                </div>
+                <div class="footer__item">
+                    <p class="footer__year">© 2024</p>
+                </div>
+                <div class="footer__item">
+                    <a href="https://rs.school/courses/javascript-ru" target="_blank" >
+                        <img src="./assets/icons/rs-icon.svg" alt="rsschool logo" class="footer__logo" style="width: 70px; height: 70px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
